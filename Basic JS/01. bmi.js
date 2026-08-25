@@ -1,6 +1,15 @@
+// check bmi
+
 const weight = process.argv[2];
 const height = process.argv[3];
 
 const bmi = (weight, height) => weight / (height*height);
 
-console.log(bmi(weight, height));
+const bmiCalc = bmi(weight, height);
+
+if(bmiCalc<18.5) console.log("Underweight");
+else if(bmiCalc>=18.5 && bmiCalc<=24.9) console.log("Fit");
+else if(bmiCalc>=25.0 && bmiCalc<=29.9) console.log("Overweight");
+else console.log("Obesity");
+
+
