@@ -20,3 +20,11 @@ for(const sub in student.marks){
 console.log(totMarks, totSub);
 
 console.log((totMarks / totSub).toFixed(3));  // avg
+
+let avg = (totMarks / totSub).toFixed(2);
+
+if(avg>=80) console.log("Passed with ", avg, "%");
+else console.log("Try Harder!");
+
+
+// Task:
