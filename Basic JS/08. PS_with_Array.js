@@ -14,3 +14,12 @@ for(let i=0; i<marks.length; i++){
 }
 console.log(sum);
 console.log(sum/marks.length);
+
+
+// Reverse the arr:
+let marks = [25, 87, 99, 67, 34, 23];
+let rev = [];
+for(let i=marks.length-1; i>=0; i--){
+    rev.push(marks[i]);
+}
+console.log(rev);
